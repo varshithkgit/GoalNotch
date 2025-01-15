@@ -6,7 +6,7 @@ body{
 
 .head{
     width: 100vw;
-    height: 25vh;
+    height: 25%;
     background-color: #F26B0F;
 }
 
@@ -18,55 +18,66 @@ body{
 .t{
     display: inline-block;
     font-family: 'Courier New', Courier, monospace;
-    font-size: xx-large;
+    font-size: large;
     position: absolute;
-    left: 40rem;
-    top: 10rem;
+    left: 30rem;
+    top: 7rem;
     color: #FCC737;
 }
 
 .n{
     margin-top: 1rem;
     position: absolute;
-    left: 50rem;
+    left: 35rem;
     padding: 5px;
     color: #FCC737;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 100px;
+    font-size: 4rem;
     background-color: #000000;
 }
 
 .img2{
     position: absolute;
     left: 5rem;
-    bottom: 13rem;
+    bottom: 9rem;
+	height:100px;
 }
 
 .h2{
     height: 50vh;
     display: flex;
-    justify-content: space-around;
-    
+    justify-content: space-between;
+    padding:5rem;
 }
 
 .e1{
-    height: 75%;
+    height: 80%;
     width: 12.5%;
     background-color: #E73879;
     border-radius: 2.5rem;
     padding: 1rem;
     font-family: 'Courier New', Courier, monospace;
-    margin: 1rem;
+    margin:1rem;
+}
+
+ol,ul{
+	margin: 0;
+}
+
+input{
+	height: 0.7rem;
+	width: 7rem;
 }
 
 .e2{
-    height: 70%;
-    width: 30%;
+	display:flex;
+    height: 65%;
+    width: 37%;
     background-color: #FCC737;
 }
 
 .e3{
-    height: 89%;
+    height: 125%;
     width: 50%;
     background-color: #FCC737;
     border-radius: 5rem;
@@ -76,14 +87,16 @@ body{
     position: relative;
 }
 
+
+
 .h{
     display: flex;
     justify-content: end;
 }
 
 video{
-    width: 100%;
-    height: 100%;
+    width: 120%;
+    height: 120%;
 }
 
 .wrapper {
@@ -93,7 +106,7 @@ video{
 
 .stick {
 	height: 100%;
-	width: 10px;
+	width: 7px;
 	background: black;
 	border-top-left-radius: 10px;
 	border-bottom-left-radius: 5px;
@@ -101,7 +114,7 @@ video{
 }
 
 .flag {
-	width: 5rem;
+	width: 3.5rem;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 	height: 50%;
@@ -114,9 +127,9 @@ video{
 
 
 .container{
-    margin-top: 2rem;
+	margin-top:1rem;
     display: inline-block;
-    height: 90%;
+    height: 100%;
     width: 10em;
     animation-name: car;
     animation-timing-function: linear;
@@ -133,7 +146,7 @@ video{
 }
 
 .m{
-    height: 33.33%;
+    height: 30%;
     width: 100%;
     background-color: black;
     position: relative;
@@ -174,16 +187,16 @@ video{
 .road{
     display: flex;
     justify-content: space-between;
-    height: 45%;
-    width: 50%;
-    border-bottom: 10px dashed black;
-    margin-top: 5rem;
-    margin-right: 5rem;
+    height: 60%;
+    width: 45%;
+    border-bottom: 7px dashed black;
+    margin-top: 3rem;
+    margin-right: 3rem;
 }
 
 
 .click1,.click2{
-padding: 5px;
+padding: 4px;
   border: solid black;
   border-width: 0 3px 3px 0;
   display: inline-block;
@@ -208,10 +221,6 @@ padding: 5px;
     to{
         transform: translate(816px);
     }
-}
-
-input{
-    height: 1.3rem;
 }
 
 .main{
@@ -239,13 +248,15 @@ input{
     width: 45vw;
     position: relative;
     display: grid;
-    grid-template-rows: repeat(6,50px);
-    grid-template-columns: repeat(7,150px);
+    grid-template-rows: repeat(6,45px);
+    grid-template-columns: repeat(7,100px);
 }
 
 
 .body{
     background-color: #7E1891;
+	width: 100vw;
+	height:105vh;
 }
 
 .stars{
@@ -253,8 +264,8 @@ input{
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
-    height: 200px;
-    width: 150px;
+    height: 150px;
+    width: 100px;
     position: absolute;
     left: 350px;
     font: 1.5rem arial;
@@ -263,7 +274,7 @@ input{
 #setgoal{
     border-radius: 5px;
     border: 0;
-    font-size: 1rem;
+    font-size: 0.7rem;
     background-color: #7E1891;
     padding: 0.5rem;
     position: relative;
@@ -272,7 +283,9 @@ input{
 }
 
 h2{
+	font: 1rem 'Courier New', Courier, monospace;
     display: inline-block;
+	font-weight: bold
 }
 
 #s1{
@@ -291,7 +304,7 @@ h2{
     width: 100%;
     height: 10%;
     position: absolute;
-    top: 90%;
+    top: 92%;
     display: flex;
     justify-content: center;
     align-items: start;
@@ -302,17 +315,16 @@ h2{
     color: white;
     padding: 0.5rem;
     border-radius: 10px;
-    font: 1.3rem sans-serif;
+    font: 0.9rem sans-serif;
 }
 
 .shk-btn{
-    align-self: center;
-    height: 15%;
+	top:5rem;
     padding: 0.5rem;
     border-radius: 10px;
-    font: 1rem sans-serif;
+    font: 0.7rem sans-serif;
     position: absolute;
-    left: 4%;
+    left: 6%;
     animation-name: shake;
     animation-timing-function: linear;
     animation-duration: 1s;
@@ -344,16 +356,6 @@ h2{
     padding: 0.5rem;
     border-radius: 10px;
     font: 1.3rem sans-serif;
-}
-
-@keyframes shake {
-    0%{
-        transform: rotate(15deg);
-    }
-
-    25%{
-        transform: rotate(-15deg);
-    }
 }
 
 @media (max-width:431px){
