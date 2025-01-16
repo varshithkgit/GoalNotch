@@ -428,6 +428,7 @@ h2{
 	}
    
    .hidden{
+    /*  */
     height: 75%;
     width: 65%;
     left: 15%;
