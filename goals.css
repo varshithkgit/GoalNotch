@@ -331,6 +331,15 @@ h2{
     animation-iteration-count: infinite;
 }
 
+@keyframes shake {
+    0%{
+        transform: rotate(20deg);
+    }
+    75%{
+        transform: rotate(-20deg);
+    }
+}
+
 .hidden{
     display: none;
     position: absolute;
