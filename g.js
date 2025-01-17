@@ -117,11 +117,25 @@ button2.addEventListener('click',()=>{
 //setasgoalz button
 const setasgoalz=document.getElementById('setgoal');
 setasgoalz.addEventListener('click',()=>{
+  days.replaceChildren();
+  a=[{},{},{}];
+  count=0;
+  Name.innerText="";
+
+  const div=document.createElement('div');
+  div.className="stars"
+  
   for(let i=1;i<=3;i++){
 const g=document.getElementById(`g${i}`);
-document.getElementById(`s${i}`).innerHTML=" "+g.value;
+const span=document.createElement('span');
+span.className="fa fa-star checked";
+span.id=`s${i}`;
+span.innerHTML=" "+g.value;
+div.append(span);
   }
+  days.append(div);
 });
+
 
 //reset button
 const Reset=document.getElementById('Reset');
@@ -142,7 +156,7 @@ Reset.addEventListener('click',()=>{
   div.append(span);
  }
 
- main.removeChild(Name);
+
 a=[{},{},{}];
 count=0;
 Name.innerText="";
